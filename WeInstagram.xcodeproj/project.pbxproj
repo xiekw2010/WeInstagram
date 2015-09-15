@@ -19,10 +19,19 @@
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		BE36ACE91BA85C29002D6825 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE36ACE81BA85C29002D6825 /* Reveal.framework */; };
+		BE36ACEB1BA87099002D6825 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE36ACEA1BA87099002D6825 /* image.xcassets */; };
+		BE82CE3E1BA1C5CF00BF8770 /* ReactComponents in Resources */ = {isa = PBXBuildFile; fileRef = BE82CE3D1BA1C5CF00BF8770 /* ReactComponents */; };
+		BEBD14F21B71DACA008477AC /* ILSIGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBD14E51B71DACA008477AC /* ILSIGLoginViewController.m */; };
+		BEBD14F31B71DACA008477AC /* ILSIGNativeLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBD14E71B71DACA008477AC /* ILSIGNativeLoginViewController.m */; };
+		BEBD14F41B71DACA008477AC /* ILSIGSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBD14E91B71DACA008477AC /* ILSIGSessionManager.m */; };
+		BEBD14F51B71DACA008477AC /* ILSInstagram-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEBD14EA1B71DACA008477AC /* ILSInstagram-Info.plist */; };
+		BEBD14F61B71DACA008477AC /* ILSInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBD14ED1B71DACA008477AC /* ILSInstagram.m */; };
+		BEBD14F71B71DACA008477AC /* ILSInstagramNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBD14F01B71DACA008477AC /* ILSInstagramNetworkOperation.m */; };
+		BECA445E1B746440009706A7 /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = BECA445D1B746440009706A7 /* index.ios.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,26 +116,43 @@
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = iOS/main.jsbundle; sourceTree = "<group>"; };
-		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj; sourceTree = "<group>"; };
-		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj; sourceTree = "<group>"; };
-		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = node_modules/react-native/Libraries/Image/RCTImage.xcodeproj; sourceTree = "<group>"; };
-		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj; sourceTree = "<group>"; };
-		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj; sourceTree = "<group>"; };
+		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
+		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
+		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
+		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* WeInstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeInstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* WeInstagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeInstagramTests.m; sourceTree = "<group>"; };
-		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj; sourceTree = "<group>"; };
-		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj; sourceTree = "<group>"; };
+		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
+		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* WeInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iOS/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iOS/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = iOS/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOS/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iOS/main.m; sourceTree = "<group>"; };
-		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = node_modules/react-native/React/React.xcodeproj; sourceTree = "<group>"; };
-		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj; sourceTree = "<group>"; };
-		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = node_modules/react-native/Libraries/Text/RCTText.xcodeproj; sourceTree = "<group>"; };
+		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		BE36ACE81BA85C29002D6825 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
+		BE36ACEA1BA87099002D6825 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		BE82CE3D1BA1C5CF00BF8770 /* ReactComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReactComponents; sourceTree = "<group>"; };
+		BEBD14E41B71DACA008477AC /* ILSIGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSIGLoginViewController.h; sourceTree = "<group>"; };
+		BEBD14E51B71DACA008477AC /* ILSIGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSIGLoginViewController.m; sourceTree = "<group>"; };
+		BEBD14E61B71DACA008477AC /* ILSIGNativeLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSIGNativeLoginViewController.h; sourceTree = "<group>"; };
+		BEBD14E71B71DACA008477AC /* ILSIGNativeLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSIGNativeLoginViewController.m; sourceTree = "<group>"; };
+		BEBD14E81B71DACA008477AC /* ILSIGSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSIGSessionManager.h; sourceTree = "<group>"; };
+		BEBD14E91B71DACA008477AC /* ILSIGSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSIGSessionManager.m; sourceTree = "<group>"; };
+		BEBD14EA1B71DACA008477AC /* ILSInstagram-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ILSInstagram-Info.plist"; sourceTree = "<group>"; };
+		BEBD14EB1B71DACA008477AC /* ILSInstagram-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ILSInstagram-Prefix.pch"; sourceTree = "<group>"; };
+		BEBD14EC1B71DACA008477AC /* ILSInstagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSInstagram.h; sourceTree = "<group>"; };
+		BEBD14ED1B71DACA008477AC /* ILSInstagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSInstagram.m; sourceTree = "<group>"; };
+		BEBD14EE1B71DACA008477AC /* ILSInstagramHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSInstagramHeader.h; sourceTree = "<group>"; };
+		BEBD14EF1B71DACA008477AC /* ILSInstagramNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSInstagramNetworkOperation.h; sourceTree = "<group>"; };
+		BEBD14F01B71DACA008477AC /* ILSInstagramNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSInstagramNetworkOperation.m; sourceTree = "<group>"; };
+		BECA44491B7456AD009706A7 /* WeInstagram.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeInstagram.pch; sourceTree = "<group>"; };
+		BECA445D1B746440009706A7 /* index.ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
+				BE36ACE91BA85C29002D6825 /* Reveal.framework in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
@@ -233,10 +260,11 @@
 		13B07FAE1A68108700A75B9A /* WeInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				BE36ACEA1BA87099002D6825 /* image.xcassets */,
+				BECA44491B7456AD009706A7 /* WeInstagram.pch */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -288,6 +316,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				BE36ACE81BA85C29002D6825 /* Reveal.framework */,
+				BECA445D1B746440009706A7 /* index.ios.js */,
+				BE82CE3D1BA1C5CF00BF8770 /* ReactComponents */,
+				BEBD14E11B71DACA008477AC /* ILSInstagram */,
 				13B07FAE1A68108700A75B9A /* WeInstagram */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WeInstagramTests */,
@@ -304,6 +336,26 @@
 				00E356EE1AD99517003FC87E /* WeInstagramTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BEBD14E11B71DACA008477AC /* ILSInstagram */ = {
+			isa = PBXGroup;
+			children = (
+				BEBD14E41B71DACA008477AC /* ILSIGLoginViewController.h */,
+				BEBD14E51B71DACA008477AC /* ILSIGLoginViewController.m */,
+				BEBD14E61B71DACA008477AC /* ILSIGNativeLoginViewController.h */,
+				BEBD14E71B71DACA008477AC /* ILSIGNativeLoginViewController.m */,
+				BEBD14E81B71DACA008477AC /* ILSIGSessionManager.h */,
+				BEBD14E91B71DACA008477AC /* ILSIGSessionManager.m */,
+				BEBD14EA1B71DACA008477AC /* ILSInstagram-Info.plist */,
+				BEBD14EB1B71DACA008477AC /* ILSInstagram-Prefix.pch */,
+				BEBD14EC1B71DACA008477AC /* ILSInstagram.h */,
+				BEBD14ED1B71DACA008477AC /* ILSInstagram.m */,
+				BEBD14EE1B71DACA008477AC /* ILSInstagramHeader.h */,
+				BEBD14EF1B71DACA008477AC /* ILSInstagramNetworkOperation.h */,
+				BEBD14F01B71DACA008477AC /* ILSInstagramNetworkOperation.m */,
+			);
+			path = ILSInstagram;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,8 +558,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BEBD14F51B71DACA008477AC /* ILSInstagram-Info.plist in Resources */,
+				BE82CE3E1BA1C5CF00BF8770 /* ReactComponents in Resources */,
+				BE36ACEB1BA87099002D6825 /* image.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				BECA445E1B746440009706A7 /* index.ios.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,8 +581,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBD14F71B71DACA008477AC /* ILSInstagramNetworkOperation.m in Sources */,
+				BEBD14F31B71DACA008477AC /* ILSIGNativeLoginViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				BEBD14F21B71DACA008477AC /* ILSIGLoginViewController.m in Sources */,
+				BEBD14F41B71DACA008477AC /* ILSIGSessionManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				BEBD14F61B71DACA008477AC /* ILSInstagram.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,12 +655,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeInstagram.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/node_modules/react-native/React/**",
 				);
-				INFOPLIST_FILE = "iOS/Info.plist";
+				INFOPLIST_FILE = iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = WeInstagram;
@@ -611,12 +677,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeInstagram.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/node_modules/react-native/React/**",
 				);
-				INFOPLIST_FILE = "iOS/Info.plist";
+				INFOPLIST_FILE = iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = WeInstagram;

@@ -1,6 +1,9 @@
 'use strict';
 var React = require('react-native');
-var SearchPage = require('./SearchPage')
+var SearchPage = require('./ReactComponents/SearchPage')
+var ProfileView = require('./ReactComponents/ProfileView')
+
+var IgSessionManager = require
 
 class PropertyFinderApp extends React.Component {
   render() {
@@ -9,7 +12,7 @@ class PropertyFinderApp extends React.Component {
         style={styles.container}
         initialRoute={{
           title: 'Property Finder',
-          component: SearchPage,
+          component: ProfileView,
         }}/>
     );
   } 
